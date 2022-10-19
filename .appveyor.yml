@@ -1,6 +1,6 @@
 image: Ubuntu1804  # образ для сборки
 
-stack: node 10  # окружение
+stack: node 12  # окружение
 
 branches:
   only:
@@ -14,7 +14,7 @@ install:
 build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - npm run build   # команда сборки
+  off   # команда сборки
 
 test_script:
   - npm run lint && npm test  # скрипт тестирования
