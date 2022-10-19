@@ -10,14 +10,11 @@ const healthLevel = {
   },
 };
 
-export default function whatMyHealth({ name, health }) {
+export default function whatMyHealth({ health }) {
   if (health > 50) {
     return healthLevel.green.status;
   }
   if (health > 15 && health < 50) {
     return healthLevel.yellow.status;
-  }
-  if (health < 15) {
-    return healthLevel.red.status;
-  }
+  } return healthLevel.red.status;
 }
